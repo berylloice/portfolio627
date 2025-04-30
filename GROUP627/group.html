@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Awesome Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hi! I'm [Your Name]</h1>
+        <p>A young coder who loves making websites!</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm [your age] years old and I love [your hobbies].</p>
+        <p>I'm learning to code because [your reason].</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>This is what my first project was about...</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>This is second project</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: [your email]</p>
+        <p>Phone: [your phone number - ask parents first!]</p>
+    </section>
+
+    <footer>
+        <p>© 2023 My Portfolio. Made with ❤️ by me!</p>
+    </footer>
+    <script>
+        // Change header color when clicked
+        document.querySelector('header').addEventListener('click', function() {
+            this.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        });
+    
+        // Show a message when projects are clicked
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('click', function() {
+                alert('You clicked on my project!');
+            });
+        });
+    </script>
+</body>
+</html>
